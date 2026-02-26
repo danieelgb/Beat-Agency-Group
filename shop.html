@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop | Beat Agency Group</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+      <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <!-- Logo Left -->
+      <div class="navbar-logo-section">
+        <a href="#hero" class="navbar-logo">
+          <img src="/extras/logo.png" alt="Beat Agency Group" class="logo-img">
+          <span class="logo-text">BEAT AGENCY</span>
+        </a>
+      </div>
+
+      <!-- Menu Center -->
+      <div class="navbar-menu-section">
+        <input type="checkbox" id="hamburger-check" class="hamburger-check">
+        <label for="hamburger-check" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav class="navbar-menu" id="navbar-menu">
+          <a href="/index3.html#hero" class="navbar-link">Inicio</a>
+          <a href="/index3.html#services" class="navbar-link">Servicios</a>
+          <a href="/index3.html#roster" class="navbar-link">Artistas</a>
+          <a href="/index3.html#news" class="navbar-link">News</a>
+          <a href="/tienda/shop.html" class="navbar-link">Shop</a>
+        </nav>
+      </div>
+
+      <!-- Social Icons Right -->
+      <div class="navbar-social-section">
+        <div class="social-icons">
+          <a href="#" class="social-icon" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="social-icon" title="X">
+            <svg class="x-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.07-6.614-5.848 6.614H2.88l7.732-8.835L3.432 2.25H10.14l4.734 6.236z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-icon" title="TikTok">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="#" class="social-icon" title="Carrito" onclick="toggleCart(); return false;">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="cart-overlay" class="cart-overlay" onclick="toggleCart()"></div>
+
+    <section class="shop-hero">
+      <a href="index.html" class="btn-volver-hero">
+          ← Volver al inicio
+      </a>
+
+      <img src="/extras/shop.jpg" alt="Beat Agency Merch Background" class="hero-bg-img">
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+          <h1 class="hero-title">OFFICIAL MERCH</h1>
+          <p class="hero-subtitle">BEAT AGENCY EXCLUSIVE DROPS</p>
+      </div>
+    </section>
+
+    <!--Tienda-->
+    <main class="shop-container">
+      <div class="product-grid">
+        <article class="product-card" data-id="1" data-name="Blackout Vinilo" data-price="29.99">
+            <div class="product-img-container">
+                <span class="tag-new">Nuevo Drop</span>
+                <img src="merch/merch8.jpg" alt="Blackout Vinilo" class="product-img">
+                
+                <button class="btn-add-cart-overlay" onclick="addToCart(this)">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+            
+            <div class="product-info">
+                <h3>Vinilo 'Blackout'</h3>
+                <p class="price">29.99€</p>
+            </div>
+        </article>
+
+        <article class="product-card" data-id="2" data-name="Blackout Beanie" data-price="12.99">
+                <div class="product-img-container">
+                    <span class="tag-new">Nuevo Drop</span>
+                    <img src="merch/merch7.jpg" alt="Blackout Beanie" class="product-img">
+                    
+                    <button class="btn-add-cart-overlay" onclick="addToCart(this)">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+                
+                <div class="product-info">
+                    <h3>'Blackout' Beanie</h3>
+                    <p class="price">12.99€</p>
+                </div>
+            </article>
+
+            <article class="product-card" data-id="3" data-name="Beat Hoodie Black" data-price="44.99">
+                <div class="product-img-container">
+                    <img src="merch/merch2.jpg" alt="Beat Hoodie" class="product-img">
+                    
+                    <button class="btn-add-cart-overlay" onclick="addToCart(this)">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+                
+                <div class="product-info">
+                    <h3>Hoodie Beat Agency 'Black'</h3>
+                    <p class="price">44.99€</p>
+                </div>
+            </article>
+
+            <article class="product-card" data-id="4" data-name="Beat Hoodie White" data-price="44.99">
+                <div class="product-img-container">
+                    <img src="merch/merch3.jpg" alt="Beat Hoodie" class="product-img">
+                    
+                    <button class="btn-add-cart-overlay" onclick="addToCart(this)">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+                
+                <div class="product-info">
+                    <h3>Hoodie Beat Agency 'White'</h3>
+                    <p class="price">44.99€</p>
+                </div>
+            </article>
+
+            <article class="product-card" data-id="5" data-name="Beat Camiseta Black" data-price="23.99">
+                <div class="product-img-container">
+                    <img src="merch/merch4.jpg" alt="Beat T-Shirt" class="product-img">
+                    
+                    <button class="btn-add-cart-overlay" onclick="addToCart(this)">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+                
+                <div class="product-info">
+                    <h3>Camiseta Beat Agency 'Black'</h3>
+                    <p class="price">23.99€</p>
+                </div>
+            </article>
+
+            <article class="product-card" data-id="6" data-name="Beat Camiseta White" data-price="23.99">
+                <div class="product-img-container">
+                    <img src="merch/merch5.jpg" alt="Beat T-Shirt" class="product-img">
+                    
+                    <button class="btn-add-cart-overlay" onclick="addToCart(this)">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+                
+                <div class="product-info">
+                    <h3>Camiseta Beat Agency 'White'</h3>
+                    <p class="price">23.99€</p>
+                </div>
+            </article>
+
+            <article class="product-card" data-id="7" data-name="Gorra Classic" data-price="9.50">
+              <div class="product-img-container">
+                  <img src="/tienda/merch/merch1.jpg" alt="Agency Cap" class="product-img">
+                  
+                  <button class="btn-add-cart-overlay" onclick="addToCart(this)">
+                      <i class="fas fa-shopping-cart"></i>
+                  </button>
+              </div>
+              
+              <div class="product-info">
+                  <h3>Gorra Beat Agency 'Classic'</h3>
+                  <p class="price">9.50€</p>
+              </div>
+          </article>
+
+          <article class="product-card" data-id="8" data-name="Chain Classic" data-price="6.50">
+              <div class="product-img-container">
+                  <img src="merch/merch6.jpg" alt="Chain Classic" class="product-img">
+                  
+                  <button class="btn-add-cart-overlay" onclick="addToCart(this)">
+                      <i class="fas fa-shopping-cart"></i>
+                  </button>
+              </div>
+              
+              <div class="product-info">
+                  <h3>Chain Beat Agency 'Classic'</h3>
+                  <p class="price">6.50€</p>
+              </div>
+          </article>
+        </div>
+    </main>
+
+    <aside id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <span class="close-cart" onclick="toggleCart()">&times;</span>
+            <h3>Tu Carrito</h3>
+        </div>
+        <div id="cart-items" class="cart-items">
+            </div>
+        <div class="cart-footer">
+            <div class="total-container">
+                <span>Total:</span>
+                <span id="cart-total">0.00€</span>
+            </div>
+            <button class="btn-checkout">Finalizar Pedido</button>
+        </div>
+    </aside>
+
+    <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <h4>Beat Agency Group</h4>
+        <div class="footer-social">
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" title="X">
+            <svg class="x-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.07-6.614-5.848 6.614H2.88l7.732-8.835L3.432 2.25H10.14l4.734 6.236z"/>
+            </svg>
+          </a>
+          <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-legal">
+      <h4>Legal & Terms</h4>
+      <a href="javascript:void(0)" onclick="openModal('privacidad')">Política de privacidad</a>
+      <a href="javascript:void(0)" onclick="openModal('terminos')">Términos y condiciones</a>
+      <a href="javascript:void(0)" onclick="openModal('cookies')">Cookies</a>
+    </div>
+
+    <div id="legalModal" class="modal-flotante">
+      <div class="modal-contenido">
+        <span class="cerrar-btn" onclick="closeModal()">&times;</span>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Beat Agency Group. Todos los derechos reservados.</p>
+    </div>
+    </footer>
+    <script src="shop.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beat Agency Group - Management Musical</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Montserrat:wght@300;400;600;700;900&family=Oswald:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <!-- Logo Left -->
+      <div class="navbar-logo-section">
+        <a href="#hero" class="navbar-logo">
+          <img src="/extras/logo.png" alt="Beat Agency Group" class="logo-img">
+          <span class="logo-text">BEAT AGENCY</span>
+        </a>
+      </div>
+
+      <!-- Menu Center -->
+      <div class="navbar-menu-section">
+        <input type="checkbox" id="hamburger-check" class="hamburger-check">
+        <label for="hamburger-check" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav class="navbar-menu" id="navbar-menu">
+          <a href="#hero" class="navbar-link">Inicio</a>
+          <a href="#services" class="navbar-link">Servicios</a>
+          <a href="#roster" class="navbar-link">Artistas</a>
+          <a href="#news" class="navbar-link">News</a>
+          <a href="tienda/shop.html" class="navbar-link">Shop</a>
+        </nav>
+      </div>
+
+      <!-- Social Icons Right -->
+      <div class="navbar-social-section">
+        <div class="social-icons">
+          <a href="#" class="social-icon" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="social-icon" title="X">
+            <svg class="x-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.07-6.614-5.848 6.614H2.88l7.732-8.835L3.432 2.25H10.14l4.734 6.236z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-icon" title="TikTok">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-slider">
+      <div class="hero-slide active" style="background-image: url('/extras/hero.jpg')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">El nuevo estándar urbano</h1>
+      <p class="hero-subtitle">Llevamos artistas al siguiente nivel</p>
+      <button class="hero-cta">Explorar</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>Quiénes Somos</h2>
+        <p>El panorama musical ha cambiado y las reglas del juego también. En Beat Agency Group, entendemos que el talento es solo el punto de partida. Acompañamos al artista emergente en ese complejo tránsito entre la creación en el estudio y la consolidación en la industria.</p>
+        <p>Nuestra misión es aportar una estructura empresarial sólida a la autenticidad del género urbano. A través de una gestión integral que abarca desde el marketing de guerrilla hasta el booking internacional, convertimos proyectos artísticos en marcas rentables y duraderas. No buscamos hits de un solo día; construimos carreras con cimientos de hierro.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">&lsaquo;30 días</span>
+            <span class="stat-label">Time to market</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Soporte al artista</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Partners</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="extras/intro.jpg" alt="Beat Agency">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="services-container">
+      <h2>Nuestros Servicios</h2>
+      <div class="services-grid">
+        <div class="service-item">
+          <div class="service-icon"><i class="fas fa-headphones"></i></div>
+          <h3>Management</h3>
+          <p>Gestión integral de carrera. Contratos, estrategia y posicionamiento global de tus artistas.</p>
+        </div>
+        <div class="service-item">
+          <div class="service-icon"><i class="fas fa-music"></i></div>
+          <h3>Booking</h3>
+          <p>Conexión con festivales, clubs y eventos. Maximizamos las oportunidades de actuación.</p>
+        </div>
+        <div class="service-item">
+          <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Marketing Digital</h3>
+          <p>Campaigns en redes sociales y plataformas de streaming. Construimos presencia digital sólida.</p>
+        </div>
+        <div class="service-item">
+          <div class="service-icon"><i class="fas fa-compact-disc"></i></div>
+          <h3>Lanzamientos</h3>
+          <p>Gestionamos la producción y distribución de música. Estrategia completa de cada lanzamiento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roster Section -->
+  <section class="roster-section" id="roster">
+    <div class="roster-container">
+        <h2 class="roster-title">Nuestro Roster</h2>
+        
+        <div class="carousel-wrapper">
+            <button class="nav-btn prev">‹</button>
+            
+            <div class="carousel-track">
+                <div class="artist-card">
+                    <img src="extras/artistas/cantante1.jpg" alt="Roke">
+                    <div class="artist-info">
+                        <h3>ROKE</h3>
+                        <p>R&B Singer</p>
+                    </div>
+                </div>
+
+                <div class="artist-card">
+                    <img src="extras/artistas/cantante2.jpg" alt="Vandall">
+                    <div class="artist-info">
+                        <h3>VANDALL</h3>
+                        <p>Trap Artist</p>
+                    </div>
+                </div>
+
+                <div class="artist-card">
+                    <img src="extras/artistas/cantante3.jpg" alt="Zentro">
+                    <div class="artist-info">
+                        <h3>ZENTRO</h3>
+                        <p>Resident DJ</p>
+                    </div>
+                </div>
+
+                <div class="artist-card">
+                    <img src="extras/artistas/cantante4.jpg" alt="Vix">
+                    <div class="artist-info">
+                        <h3>VIX</h3>
+                        <p>Resident DJ</p>
+                    </div>
+                </div>
+
+                <div class="artist-card">
+                    <img src="extras/artistas/cantante5.jpg" alt="DRK">
+                    <div class="artist-info">
+                        <h3>DRK</h3>
+                        <p>Producer</p>
+                    </div>
+                </div>
+
+                <div class="artist-card">
+                    <img src="extras/artistas/cantante6.jpg" alt="Zayd">
+                    <div class="artist-info">
+                        <h3>ZAYD</h3>
+                        <p>Producer</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="nav-btn next">›</button>
+        </div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section class="news" id="news">
+    <div class="news-container">
+      <h2>Últimas Noticias</h2>
+      <div class="news-grid">
+        <article class="news-card">
+          <div class="news-image">
+            <img src="extras/noticias/noticias1.jpg" alt="Noticia">
+          </div>
+          <div class="news-content">
+            <span class="news-date">24 Feb 2026</span>
+            <h3>Beat Agency Takeover: Nuestra presencia en el Riverland Fest</h3>
+            <p>Un hito histórico para Beat Agency. Varios de nuestros artistas fueron seleccionados para actuar en el Riverland Fest, uno de los festivales más prestigiosos del panorama nacional.</p>
+            <a href="noticias/noticia1.html" class="news-link">Leer más →</a>
+          </div>
+        </article>
+        <article class="news-card">
+          <div class="news-image">
+            <img src="extras/noticias/blackout.jpg" alt="Noticia">
+          </div>
+          <div class="news-content">
+            <span class="news-date">20 Feb 2026</span>
+            <h3>Vandall lanza su nuevo álbum 'Blackout'</h3>
+            <p>Nuestro artista de trap Vandall celebra el estreno de su nuevo proyecto 'Blackout', una obra que fusiona sonidos electrónicos con elementos de trap urbano.</p>
+            <a href="noticias/noticia2.html" class="news-link">Leer más →</a>
+          </div>
+        </article>
+        <article class="news-card">
+          <div class="news-image">
+            <img src="extras/noticias/noticias2.jpg" alt="Noticia">
+          </div>
+          <div class="news-content">
+            <span class="news-date">15 Feb 2026</span>
+            <h3>Behind the Scenes: Así se grabó el videoclip de '3 AM'</h3>
+            <p>Entramos en el set de rodaje de '3 AM', la nueva apuesta de Roke. Entre luces de neón y cámaras de 35mm, descubrimos el proceso creativo detrás de la estética que define este lanzamiento.</p>
+            <a href="noticias/noticia3.html" class="news-link">Leer más →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-container">
+      <h2>Contacto</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Únete a la familia de Beat Agency</h3>
+          <p>¿Eres un artista buscando representación? ¿Necesitas servicios de management o booking?</p>
+          <div class="contact-details">
+            <p><strong>Email:</strong> info@beatagency.com</p>
+            <p><strong>Teléfono:</strong> +34 666 777 888</p>
+            <p><strong>Ciudad:</strong> Madrid, España</p>
+          </div>
+        </div>
+        <form class="contact-form">
+          <input type="text" placeholder="Nombre" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Mensaje" rows="5" required></textarea>
+          <button type="submit" class="form-submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <h4>Beat Agency Group</h4>
+        <div class="footer-social">
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" title="X">
+            <svg class="x-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.07-6.614-5.848 6.614H2.88l7.732-8.835L3.432 2.25H10.14l4.734 6.236z"/>
+            </svg>
+          </a>
+          <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-legal">
+      <h4>Legal & Terms</h4>
+      <a href="javascript:void(0)" onclick="openModal('privacidad')">Política de privacidad</a>
+      <a href="javascript:void(0)" onclick="openModal('terminos')">Términos y condiciones</a>
+      <a href="javascript:void(0)" onclick="openModal('cookies')">Cookies</a>
+    </div>
+
+    <div id="legalModal" class="modal-flotante">
+      <div class="modal-contenido">
+        <span class="cerrar-btn" onclick="closeModal()">&times;</span>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Beat Agency Group. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!--Cookies-->
+  <div id="cookie-banner" class="cookie-overlay">
+    <div class="cookie-content">
+        <div class="cookie-text">
+            <i class="fas fa-cookie-bite"></i>
+            <p>Utilizamos cookies para mejorar tu experiencia en <strong>Beat Agency</strong>. ¿Nos das permiso?</p>
+        </div>
+        <div class="cookie-buttons">
+            <button id="reject-cookies" class="btn-cookie secondary">Rechazar</button>
+            <button id="accept-cookies" class="btn-cookie primary">Aceptar</button>
+        </div>
+    </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
